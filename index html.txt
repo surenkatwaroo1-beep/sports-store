@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AllStar Sports Store</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f2f6f9;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0a1a2f;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 36px;
+      font-weight: 900;
+      color: #00c2b8;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(to right, #0a1a2f, #004e64);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 650px;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      padding: 15px 32px;
+      border: none;
+      border-radius: 8px;
+      background: #00c2b8;
+      color: #0a1a2f;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 70px 20px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 45px;
+      color: #0a1a2f;
+    }
+
+    /* ABOUT */
+    .about {
+      text-align: center;
+      max-width: 780px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    /* CATEGORIES */
+    .categories {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .category {
+      background: white;
+      padding: 30px;
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .price {
+      color: #008c99;
+      font-weight: bold;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    /* CONTACT */
+    form {
+      max-width: 520px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 22px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button.submit {
+      background: #0a1a2f;
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0a1a2f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="brand">ALLSTAR SPORTS</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#categories">Sports</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Premium Gear for Every Athlete</h1>
+    <p>Shop high-quality equipment for football, cricket, badminton, tennis, basketball, and fitness.</p>
+    <button>Shop Collection</button>
+  </div>
+
+  <section id="about">
+    <h2>About AllStar Sports</h2>
+    <p class="about">
+      AllStar Sports Store is dedicated to providing professional-grade sporting equipment for athletes of all levels. From training to competition, we help you perform at your best.
+    </p>
+  </section>
+
+  <section id="categories">
+    <h2>Sports Categories</h2>
+    <div class="categories">
+      <div class="category">⚽ Football</div>
+      <div class="category">🏏 Cricket</div>
+      <div class="category">🏸 Badminton</div>
+      <div class="category">🏀 Basketball</div>
+      <div class="category">🎾 Tennis</div>
+      <div class="category">🏋️ Fitness</div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+        <div class="card-content">
+          <h3>Football Boots</h3>
+          <p class="price">$120.00</p>
+          <p>Lightweight boots designed for speed and ball control.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+        <div class="card-content">
+          <h3>Cricket Bat</h3>
+          <p class="price">$150.00</p>
+          <p>Premium willow bat for powerful shots.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1624638764104-6a5f1f0a0a8b">
+        <div class="card-content">
+          <h3>Badminton Racket</h3>
+          <p class="price">$85.00</p>
+          <p>High-speed racket with excellent control.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b">
+        <div class="card-content">
+          <h3>Basketball</h3>
+          <p class="price">$45.00</p>
+          <p>Official size ball for indoor and outdoor courts.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648">
+        <div class="card-content">
+          <h3>Tennis Racket</h3>
+          <p class="price">$110.00</p>
+          <p>Balanced racket for power and precision.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1594737625785-c39f7e10f64c">
+        <div class="card-content">
+          <h3>Dumbbells Set</h3>
+          <p class="price">$70.00</p>
+          <p>Perfect for strength training at home or gym.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name</label>
+      <input type="text">
+
+      <label>Email</label>
+      <input type="email">
+
+      <label>Message</label>
+      <textarea rows="4"></textarea>
+
+      <button class="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2026 AllStar Sports Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
